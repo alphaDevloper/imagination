@@ -1,5 +1,5 @@
-/* eslint-disable camelcase */
-import { clerkClient, WebhookEvent } from "@clerk/nextjs/server";
+import { clerkClient } from "@clerk/clerk-sdk-node"; // ✅ Correct for API routes
+import { WebhookEvent } from "@clerk/nextjs/server";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import { Webhook } from "svix";
